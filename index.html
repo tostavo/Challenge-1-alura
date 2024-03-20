@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Encriptador y Desencriptador</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Noto+Sans+Khojki&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="image-container">
+        <img src="img/ALURA.png" alt="ALURA">
+    </div>
+    <h1 class="title">CODIFICADOR ALURA</h1>
+    <div class="input-container">
+        <h2>Texto a Encriptar o Desencriptar</h2>
+        <textarea id="textoInput" placeholder="Esperando mensaje..."></textarea>
+        <div class="btn-group">
+            <button id="encriptarBtn">Encriptar</button>
+            <button id="desencriptarBtn">Desencriptar</button>
+        </div>
+    </div>
+    <div class="output-container">
+        <h2>Texto Encriptado o Desencriptado</h2>
+        <textarea id="resultadoOutput"  readonly></textarea>
+        <button id="copiarBtn">Copiar</button>
+    </div>
+</div>
+
+<footer class="footerNombre">
+    <h2>Gustavo Idarraga, 2024</h2>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

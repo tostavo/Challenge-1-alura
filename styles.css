@@ -1,0 +1,174 @@
+body {
+    font-family: "Noto Sans Khojki", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background: linear-gradient(to bottom, #c0deff , #2e6e96 , #0e4981 );
+}
+
+h2{
+    color: rgb(70, 83, 113);
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    height: 100vh;
+}
+
+.image-container {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 150px; 
+    height: auto; 
+    padding: 10px; 
+}
+
+.title {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    font-size: 50px;
+    color: #072B61;
+    margin-bottom: 20px;
+}
+
+.input-container, .output-container {
+    width: 40%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4); 
+}
+
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-container h2, .output-container h2 {
+    margin-bottom: 10px;
+}
+
+.input-container textarea, .output-container textarea {
+    width: calc(100% - 20px); 
+    height: 200px; 
+    padding: 10px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.btn-group {
+    display: flex;
+}
+
+.btn-group button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn-group button:last-child {
+    margin-right: 0;
+}
+
+#textoInput{
+    font-family: "Noto Sans Khojki", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    border-radius: 10px;
+    font-size: 16px;
+    
+}
+#resultadoOutput{
+    font-family: "Noto Sans Khojki", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#desencriptarBtn{
+    background-color: rgb(219, 219, 219);
+    border: 1px solid gray;
+    color: rgba(105, 115, 148);
+    transition: background-color 0.3s ease ;
+}
+
+#desencriptarBtn:hover{
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+}
+#copiarBtn {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(105, 115, 148);
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#copiarBtn:hover {
+    background-color: #0056b3;
+}
+
+
+.image-container {
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.footerNombre h2{
+    text-align: center;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        height: 100%;
+        margin-bottom: 10px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    img {
+        max-width: 70px;
+        margin: none;
+    }
+
+    .title {
+        font-size: 24px; 
+        width: 150px;
+        text-align: center;
+    }
+
+    .input-container, .output-container {
+        padding: 10px; 
+        width: 320px;
+    }
+
+    .input-container textarea, .output-container textarea {
+        height: 200px; 
+    }
+
+    button {
+        font-size: 12px;
+    }
+}
