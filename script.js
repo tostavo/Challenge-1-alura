@@ -25,18 +25,18 @@ function procesar(accion) {
 
 function encriptarTexto(texto) {
     return texto
-        .replace(/a/g, 'ai')
         .replace(/e/g, 'enter')
         .replace(/i/g, 'imes')
         .replace(/o/g, 'ober')
+        .replace(/a/g, 'ai')
         .replace(/u/g, 'ufat');
 }
 
 function desencriptarTexto(texto) {
     return texto
+        .replace(/ai/g, 'a')
         .replace(/enter/g, 'e')
         .replace(/imes/g, 'i')
-        .replace(/ai/g, 'a')
         .replace(/ober/g, 'o')
         .replace(/ufat/g, 'u');
 }
